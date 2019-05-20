@@ -1,0 +1,11 @@
+version: '2'
+services:
+    dishservice-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/dishservice/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=dishservice
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
